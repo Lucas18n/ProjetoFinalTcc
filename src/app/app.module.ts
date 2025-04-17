@@ -36,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
 
 import { MatTableModule } from '@angular/material/table';
+import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-create/fornecedor-create.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { MatTableModule } from '@angular/material/table';
     ContatoCrudComponent,
     ContatoReadComponent,
 
-    ClienteCreateComponent
+    ClienteCreateComponent,
+      FornecedorCreateComponent
   ],
   imports: [
     BrowserModule,

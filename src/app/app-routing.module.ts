@@ -7,6 +7,9 @@ import { FornecedorCrudComponent } from './views/fornecedor-crud/fornecedor-crud
 import { ClienteCrudComponent } from './views/cliente-crud/cliente-crud.component';
 import { ProductCreateComponent } from './component/product/product-create/product-create.component';
 import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
+import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-create/fornecedor-create.component';
+//import { FornecedorCreateComponent } from './component/fornecedor/fornecedor-create/fornecedor-create.component';
+
 
 const routes: Routes = [
 {
@@ -31,21 +34,18 @@ const routes: Routes = [
   path: "formaPagamento",
   component: FormapagamentoCrudComponent
 },
-/*{
-  path: "formaPagamento/create",
-  component: FormaPagamentoCreateComponent
-},*/
-///////////////////////////formaPagamento FIM
-
-///////////////////////////fornecedores
+{
+  path: "fornecedores/create",
+  component: FornecedorCreateComponent
+},
 {
   path: "fornecedores",
   component: FornecedorCrudComponent
 },
-/*{
-  path: "fornecedores/create",
-  component: FornecedorCreateComponent
-},*/
+//{
+  //path: "fornecedor/create",
+ // component: FornecedorCreateComponent
+//},
 ///////////////////////////fornecedores FIM
 
 ///////////////////////////Cliente

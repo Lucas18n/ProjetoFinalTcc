@@ -15,7 +15,7 @@ export class FornecedorCrudComponent implements OnInit{
       
   }
   //criando interacoes com botoes
-  navigateToProductCreate(): void{
-    this.router.navigate(['/fornecedor/create'])
+  navigateToFornecedorCreate(): void{
+    this.router.navigate(['/fornecedores/create'])
   }
 }
