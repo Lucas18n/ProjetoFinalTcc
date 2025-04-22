@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class FornecedorService {
 
-  baseUrl = "http://localhost:3001/fornecedor"
+  baseUrl = "http://localhost:8080/fornecedor"
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
   showMessage(msg: string): void {
@@ -34,7 +34,7 @@ export class FornecedorService {
   }
 
   update(product: Fornecedor): Observable<Fornecedor>{
-    const url = `${this.baseUrl}/${product.id}`
+    const url = `${this.baseUrl}/${product.forId}`
     return this.http.put<Fornecedor>(url, product)
   }
 

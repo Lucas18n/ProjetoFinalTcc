@@ -1,5 +1,6 @@
 export interface Product{
-    id?: number
-    name: String
-    price: number
+    proId?: number
+    proNome: String
+    proPrecoCusto: number
+    proPrecoVenda: number
 }

@@ -11,10 +11,9 @@ import { Fornecedor } from '../fornecedor.model';
 export class FornecedorCreateComponent {
 
   fornecedor: Fornecedor = {
-    nameFanatasia: '',
-    razao_Social: '',
-    cpfCnpj: '',
-    status: '',
+    forNomeFantasia: '',
+    forCnpj: '',
+    forRazaoSocial: ''
   }
 
   //importando fornecedorService
@@ -27,7 +26,7 @@ export class FornecedorCreateComponent {
 
   createFornecedor(): void {
     this.fornecedorService.create(this.fornecedor).subscribe(() => {
-      this.fornecedorService.showMessage('Produto Criado!!!')
+      this.fornecedorService.showMessage('Fornecedor Criado!!!')
       this.router.navigate(['/fornecedors'])
     })
   }
